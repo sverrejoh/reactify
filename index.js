@@ -82,7 +82,8 @@ module.exports = function(file, options) {
   }
 
   var transformOptions = {
-    es5: options.target === 'es5'
+    es5: options.target === 'es5',
+    sourceMaps: true
   };
 
   function transformer(source) {
